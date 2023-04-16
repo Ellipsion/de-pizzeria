@@ -1,0 +1,88 @@
+.reciept {
+    background-color: antiquewhite;
+    width: 400px;
+    /* width: 50%; */
+    /* height: 80%; */
+    height: 480px;
+    padding: 2rem 0;
+    position: relative;
+    border-radius: 15px 15px 0 0;
+    box-shadow: 0px -15px 20px -4px rgba(248, 176, 104, 0.8);
+    transform: rotate(180deg);
+
+}
+
+.reciept::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 10px;
+    background-size: 20px 20px;
+    background-image:
+     radial-gradient(circle at 10px -5px, transparent 12px, #ffffff 13px);
+  }
+  .reciept::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-repeat: repeat;
+    height: 15px;
+    background-size: 40px 20px;
+    background-image:
+      radial-gradient(circle at 10px 15px, #ffffff 12px, transparent 13px);
+  }
+
+.recieptWrapper {
+    width: 100%;
+    height: 90%;
+    transform: rotate(180deg);
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.Illustration {
+    width: 50%;
+    border-radius: 20px;
+}
+
+.recieptTitle {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px dashed gray;
+}
+
+.orderDiv {
+    width: 70%;
+    padding: 0 2rem;
+    margin: 0 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.pizzaImage {
+    width: 70px;
+}
+
+.orderItem {
+    font-size: medium;
+    font-weight: 600;
+    font-size: 1.2rem;
+    opacity: 0.9;
+    margin: 20px;
+}
+
+.toppings {
+    list-style: url("./../../assets/icons/icons8-paprika-20.png");
+    font-weight: 500;
+    opacity: 0.7;
+}

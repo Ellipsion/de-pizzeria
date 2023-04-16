@@ -1,0 +1,70 @@
+.Header {
+    width: 100vw;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    height: 15vh;
+    
+    overflow-x: hidden;
+    overflow-y: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.HeaderContainer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fefef3;
+    /* background-color: #E51414; */
+    /* color: white; */
+    border-radius: 20px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+    align-items: center;
+
+    width: 70%;
+}
+
+.HeaderLogo {
+    float: left;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.HeaderLogoImage {
+    width: 100px;
+}
+
+.HeaderNav {
+    display: flex;
+}
+
+.HeaderNavLinks {
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    text-decoration: none;
+    list-style: none;
+}
+
+.HeaderNavLink {
+    font-weight: 700;
+    margin: 0 20px;
+    letter-spacing: 1.5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    opacity: 0.8;
+    
+}
+
+.HeaderNavLink:hover {
+    opacity: 1;
+} 

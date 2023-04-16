@@ -1,0 +1,139 @@
+.BaseDiv {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+}
+
+.BaseImage, .BaseImageTwo {
+    position: absolute;
+    
+    left: -60px;
+    width: 110%;
+    z-index: -1;
+    /* bottom: 150px; */
+    bottom: 0;
+
+    border-radius: 80px;
+    
+}
+
+.BgWrapper {
+    width: 100%;
+    height: 30%;
+    /* background: #FFB30B; */
+    /* background-color: #fefef3; */
+
+    position: absolute;
+
+    bottom: 0;
+    z-index: -1;
+
+    border-radius: 0 0 50px 50px ;
+}
+
+
+.BaseWrapper {
+    /* background: #000; */
+    position: relative;
+    display: flex;
+    height: 100%;
+
+    justify-content: space-between;
+
+}
+
+.TopDiv {
+    height: 90%;
+    width: 30%;
+    /* background-color: aqua; */
+    margin: 50px 0;
+
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.PizzaIllustartion {
+    width: 300px;
+    /* margin: 2rem 0; */
+
+    border-radius: 20px;
+    margin-bottom: 20px;
+
+    
+    
+}
+
+.CardWrapper {
+    width: 55%;
+    height: 70%;
+    margin-top: 5rem;
+    /* background: #000; */
+    display: flex;
+    align-items: center;
+    align-content: space-between;
+    justify-content: space-evenly;
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.CardDiv {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    flex-wrap: wrap;
+
+    height: 50%;
+}
+
+.CardTitle {
+    margin-bottom: 0;
+}
+
+.Card {
+    background-color: white;
+    padding: 1rem 0.8rem;
+    margin: 1rem;
+
+    min-width: 100px;
+    min-height: 80px;
+
+    border-radius: 10px;
+    border: 2px solid rgb(251, 148, 46);
+    box-shadow: 11px 20px 56px 0px rgba(0,0,0,0.1),0px 6px 14px -6px rgba(251, 148, 46, 0.5);
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+.CardImage {
+    height: 40px;
+}
+
+.CardActive {
+    background-color: rgba(251, 148, 46, 0.7);
+    padding: 1rem 0.8rem;
+    margin: 1rem;
+
+    min-width: 100px;
+    min-height: 80px;
+
+    border-radius: 10px;
+    border: 2px solid rgb(251, 148, 46);
+    box-shadow: 11px 20px 50px 0px rgba(251, 148, 46, 0.8),0px 6px 14px -6px rgba(255, 195, 134, 0.8);
+
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+
+    cursor: pointer;
+}
+
