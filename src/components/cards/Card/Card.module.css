@@ -3,6 +3,7 @@
 }
 
 .Card {
+
     background-color: white;
     padding: 1rem 0.8rem;
     margin: 1rem;
@@ -26,6 +27,7 @@
 }
 
 .CardActive {
+    
     background-color: rgba(251, 148, 46, 0.7);
     padding: 1rem 0.8rem;
     margin: 1rem;

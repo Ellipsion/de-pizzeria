@@ -2,6 +2,7 @@ import "./App.css";
 
 import { useState } from "react";
 
+import Page from "./components/Page/Page";
 import Home from "./pages/Home/Home";
 import Base from "./pages/Base/Base";
 import Toppings from "./pages/Toppings/Toppings";
@@ -28,20 +29,26 @@ function App() {
   const router = createBrowserRouter([
     {
       path: "/",
-      element: <Home />,
+      element: <Page />,
       errorElement: <div>Oops!</div>,
-    },
-    {
-      path: "/base",
-      element: <Base addBase={addBase} pizza={pizza} />,
-    },
-    {
-      path: "/toppings",
-      element: <Toppings addTopping={addTopping} pizza={pizza} />,
-    },
-    {
-      path: "/order",
-      element: <Order pizza={pizza} />,
+      children: [
+        {
+          index: true,
+          element: <Home />,
+        },
+        {
+          path: "/base",
+          element: <Base addBase={addBase} pizza={pizza} />,
+        },
+        {
+          path: "/toppings",
+          element: <Toppings addTopping={addTopping} pizza={pizza} />,
+        },
+        {
+          path: "/order",
+          element: <Order pizza={pizza} />,
+        },
+      ],
     },
   ]);
   return (

@@ -1,9 +1,9 @@
 .reciept {
     background-color: antiquewhite;
-    width: 400px;
+    width: 350px;
     /* width: 50%; */
     /* height: 80%; */
-    height: 480px;
+    height: 400px;
     padding: 2rem 0;
     position: relative;
     border-radius: 15px 15px 0 0;
@@ -49,7 +49,7 @@
 }
 
 .Illustration {
-    width: 50%;
+    width: 100%;
     border-radius: 20px;
 }
 
@@ -57,7 +57,7 @@
     text-align: center;
     font-size: 1.5rem;
     padding-bottom: 1rem;
-    border-bottom: 1px dashed gray;
+    border-bottom: 1px dashed rgb(255, 49, 42);
 }
 
 .orderDiv {

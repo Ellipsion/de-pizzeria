@@ -3,6 +3,7 @@
     align-items: baseline;
     justify-content: center;
     flex-direction: column;
+    cursor: default;
 }
 
 .HomeTitle {
@@ -14,8 +15,8 @@
 
 .HomePara {
     font-size: small;
-    font-weight: 500;
-    opacity: 0.7;
+    font-weight: 600;
+    opacity: 0.5;
 }
 
 .HomeActionDiv {
@@ -68,6 +69,6 @@
 .PizzaImage {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+    /* box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); */
     /* transform: rotate(90deg); */
 }

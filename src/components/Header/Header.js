@@ -4,14 +4,29 @@ import logo from "../../assets/images/logo/logo.png";
 import { Link } from "react-router-dom";
 import DiscountButton from "../buttons/DiscountButton/DiscountButton";
 
+import { easeIn, motion } from "framer-motion";
+
 const Header = () => {
   return (
     <>
-      <header className={styles.Header}>
+      <motion.header
+        className={styles.Header}
+        transition={{ ease: easeIn, duration: 0.4 }}
+        initial={{ y: "-50vh", scale: 0.8 }}
+        animate={{
+          y: 0,
+          scale: 1,
+        }}
+      >
         <div className={styles.HeaderContainer}>
           <Link to={"/"}>
             <div className={styles.HeaderLogo}>
-              <img className={styles.HeaderLogoImage} src={logo} alt="" />
+              <motion.img
+                whileHover={{ y: -5 }}
+                className={styles.HeaderLogoImage}
+                src={logo}
+                alt=""
+              />
               <div className={styles.HeaderTitleDiv}>
                 <h1 className={styles.HeaderTitle}>Pizzeria</h1>
               </div>
@@ -20,19 +35,34 @@ const Header = () => {
           <nav className="HeaderNav">
             <ul className={styles.HeaderNavLinks}>
               <Link to={"/"}>
-                <li className={styles.HeaderNavLink}>Home</li>
+                <motion.li
+                  whileHover={{ y: -3 }}
+                  className={styles.HeaderNavLink}
+                >
+                  Home
+                </motion.li>
               </Link>
               <Link to={"/base"}>
-                <li className={styles.HeaderNavLink}>Menu</li>
+                <motion.li
+                  whileHover={{ y: -4 }}
+                  className={styles.HeaderNavLink}
+                >
+                  Menu
+                </motion.li>
               </Link>
               <Link to={"/base"}>
-                <li className={styles.HeaderNavLink}>Order</li>
+                <motion.li
+                  whileHover={{ y: -4 }}
+                  className={styles.HeaderNavLink}
+                >
+                  Order
+                </motion.li>
               </Link>
             </ul>
           </nav>
           <DiscountButton />
         </div>
-      </header>
+      </motion.header>
     </>
   );
 };
