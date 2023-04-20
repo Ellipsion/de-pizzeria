@@ -5,7 +5,7 @@ import PrimaryButton from "../../components/buttons/PrimaryButton/PrimaryButton"
 import Card from "../../components/cards/Card/Card";
 import Illustration from "../../assets/images/toppings-illustrations.webp";
 
-import { motion } from "framer-motion";
+import { AnimatePresence, easeInOut, motion } from "framer-motion";
 
 const Toppings = ({ addTopping, pizza }) => {
   let toppings = [
@@ -36,7 +36,7 @@ const Toppings = ({ addTopping, pizza }) => {
             />
           </div>
           <div className={styles.CardWrapper}>
-            <div className={styles.CardDiv}>
+            <motion.div className={styles.CardDiv}>
               {toppings.map((topping) => {
                 let active = pizza.toppings.includes(topping);
                 return (
@@ -48,12 +48,22 @@ const Toppings = ({ addTopping, pizza }) => {
                   />
                 );
               })}
-            </div>
-            {pizza.toppings.length > 0 && (
-              <Link to="/order">
-                <PrimaryButton text="Order" />
-              </Link>
-            )}
+            </motion.div>
+            <AnimatePresence>
+              {pizza.toppings.length > 0 && (
+                <motion.div
+                  exit={{
+                    scale: 0,
+                    transition: { duration: 0.3, ease: easeInOut },
+                  }}
+                  className={styles.ActionDiv}
+                >
+                  <Link to="/order">
+                    <PrimaryButton text="Order" />
+                  </Link>
+                </motion.div>
+              )}
+            </AnimatePresence>
           </div>
         </div>
       </motion.div>

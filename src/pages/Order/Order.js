@@ -49,6 +49,7 @@ const Order = ({ pizza, setShowModal }) => {
   return (
     <>
       <motion.aside
+        className={styles.TopDiv}
         variants={containervariants}
         initial="initial"
         animate="visible"

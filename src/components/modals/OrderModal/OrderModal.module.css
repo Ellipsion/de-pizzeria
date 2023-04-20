@@ -20,3 +20,11 @@
     /* background-color: black; */
     /* transform: rotateY(180deg) !important; */
 }
+
+@media screen and (max-width: 768px) {
+    .image {
+        bottom: 20%;
+        top: auto;
+        width: 10rem;
+    }
+}

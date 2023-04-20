@@ -5,12 +5,14 @@
     left: 0;
     height: 15vh;
     
+    
     overflow-x: hidden;
     overflow-y: hidden;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    z-index: 9;
 }
 
 .HeaderContainer {
@@ -24,6 +26,7 @@
 
     align-items: center;
 
+
     width: 70%;
 }
 
@@ -35,6 +38,7 @@
     justify-content: center;
 
     cursor: pointer;
+    
 }
 
 .HeaderLogoImage {
@@ -68,3 +72,32 @@
 .HeaderNavLink:hover {
     opacity: 1;
 } 
+
+@media only screen and (max-width: 768px) {
+    /* For mobile phones: */
+    .Header {
+      top: -1.5rem;
+
+      /* background: #fefefeac; */
+      /* backdrop-filter: blur(2px); */
+    }
+
+    .HeaderContainer {
+        width: 100%;
+        border-radius: 0;
+
+        background-color: #fefef3a5;
+        backdrop-filter: blur(5px);
+        box-shadow: none;
+    }
+
+    .HeaderLogo {
+        width: 70vw;
+        
+    }
+
+    .HeaderNav {
+        display: none;
+    }
+    
+  }

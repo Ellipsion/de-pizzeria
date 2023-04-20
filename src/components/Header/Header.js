@@ -32,7 +32,7 @@ const Header = () => {
               </div>
             </div>
           </Link>
-          <nav className="HeaderNav">
+          <nav className={styles.HeaderNav}>
             <ul className={styles.HeaderNavLinks}>
               <Link to={"/"}>
                 <motion.li

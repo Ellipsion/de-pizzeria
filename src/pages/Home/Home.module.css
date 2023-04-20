@@ -16,7 +16,7 @@
 .HomePara {
     font-size: small;
     font-weight: 600;
-    opacity: 0.5;
+    opacity: 0.5; 
 }
 
 .HomeActionDiv {
@@ -71,4 +71,37 @@
     border-radius: 20px;
     /* box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1); */
     /* transform: rotate(90deg); */
+}
+
+/* media query for mobile */
+@media screen and (max-width: 768px) {
+    .HomeTitleDiv {
+        align-items: center;
+        
+    }
+
+    .HomeTitle {
+        font-size: 3rem;
+    }
+
+    .HomePara {
+        font-size: small;
+        margin: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    
+
+    .DiscountButton {
+        margin: 0.5rem 0;
+    }
+
+    .PizzaButton {
+        padding: 0.8rem 1.2rem;
+    }
+
+    .PizzaImageDiv {
+        order: -1;
+        width: 100%;
+    }
 }

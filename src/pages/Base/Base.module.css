@@ -18,19 +18,6 @@
     
 }
 
-.BgWrapper {
-    width: 100%;
-    height: 30%;
-    /* background: #FFB30B; */
-    /* background-color: #fefef3; */
-
-    position: absolute;
-
-    bottom: 0;
-    z-index: -1;
-
-    border-radius: 0 0 50px 50px ;
-}
 
 
 .BaseWrapper {
@@ -91,51 +78,6 @@
     height: 50%;
 }
 
-.CardTitle {
-    margin-bottom: 0;
-}
-
-.Card {
-    background-color: white;
-    padding: 1rem 0.8rem;
-    margin: 1rem;
-
-    min-width: 100px;
-    min-height: 80px;
-
-    border-radius: 10px;
-    border: 2px solid rgb(251, 148, 46);
-    box-shadow: 11px 20px 56px 0px rgba(0,0,0,0.1),0px 6px 14px -6px rgba(251, 148, 46, 0.5);
-
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-align: center;
-
-    cursor: pointer;
-}
-
-.CardImage {
-    height: 40px;
-}
-
-.CardActive {
-    background-color: rgba(251, 148, 46, 0.7);
-    padding: 1rem 0.8rem;
-    margin: 1rem;
-
-    min-width: 100px;
-    min-height: 80px;
-
-    border-radius: 10px;
-    border: 2px solid rgb(251, 148, 46);
-    box-shadow: 11px 20px 50px 0px rgba(251, 148, 46, 0.8),0px 6px 14px -6px rgba(255, 195, 134, 0.8);
-
-    font-size: 0.9rem;
-    font-weight: 500;
-    text-align: center;
-
-    cursor: pointer;
-}
 
 .ActionDiv {
     width: 100%;
@@ -143,3 +85,63 @@
     align-items: center;
     justify-content: center;
 }
+
+/* media query for mobile */
+@media screen and (max-width: 768px) {
+    .BaseWrapper {
+        height: 90%;
+        /* overflow: hidden; */
+        flex-direction: column;
+        bottom: auto;
+        width: 100vw;
+        align-items: center;
+    }
+
+    .TopDiv {
+        width: 100%;
+        align-items: center;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+        align-self: center;
+        height: 100%;
+        margin: 0;
+    }
+
+    .TopDiv h1 {
+        font-size: 1.5rem;
+        margin: 0;
+        margin-bottom: 1rem;
+        order: -1;
+    }
+
+    
+
+    .PizzaIllustartion {
+        /* width: 100%; */
+        margin: 0;
+        /* height: 50%; */
+        /* margin-top: 3rem; */
+        /* border-radius: 0; */
+    }
+
+    .CardWrapper {
+        width: 100%;
+        height: 100%;
+        
+        margin: 0;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        /* align-content: center; */
+        flex-wrap: wrap;
+    }
+
+    .ActionDiv {
+        margin: 1rem 0;
+
+    }
+
+    
+   
+}
+
