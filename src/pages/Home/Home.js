@@ -5,16 +5,57 @@ import DiscountButton from "../../components/buttons/DiscountButton/DiscountButt
 
 import { Link } from "react-router-dom";
 import { LazyLoadImage } from "react-lazy-load-image-component";
-import { easeIn, easeInOut, motion } from "framer-motion";
+import { easeIn, easeInOut, motion, AnimatePresence } from "framer-motion";
+
+const asideVariants = {
+  initial: {
+    opacity: 0,
+    scale: 0.6,
+  },
+  animate: {
+    opacity: 1,
+    scale: 1,
+    transition: {
+      ease: easeInOut,
+      duration: 0.4,
+      delay: 0.2,
+    },
+  },
+};
+
+const actinDivVariants = {
+  initial: { x: "-100vw" },
+  animate: {
+    x: 0,
+    transition: {
+      duration: 0.5,
+      delay: 1,
+      type: "spring",
+    },
+  },
+};
+
+const buttonVariants = {
+  hover: {
+    scale: 1.05,
+    boxShadow:
+      "11px 20px 56px 0px rgba(0,0,0,0.1),0px 6px 14px -6px rgba(251, 148, 46, 0.5)",
+    transition: {
+      type: "spring",
+      stiffness: 200,
+    },
+  },
+};
+
 const Home = () => {
   return (
     <>
       <aside>
         <motion.div
           className={styles.HomeTitleDiv}
-          transition={{ ease: easeInOut, duration: 0.4, delay: 0.2 }}
-          initial={{ opacity: 0, scale: 0.6 }}
-          animate={{ opacity: 1, scale: 1 }}
+          variants={asideVariants}
+          initial={"initial"}
+          animate={"animate"}
         >
           <p className={styles.HomeTitle}>
             We deliver <br /> the best <br /> pizzas in town
@@ -25,22 +66,15 @@ const Home = () => {
           </p>
           <motion.div
             className={styles.HomeActionDiv}
-            transition={{ duration: 0.5, delay: 1, type: "spring" }}
-            // onFocus={{ x: 0 }}
-            initial={{ x: "-100vw" }}
-            animate={{ x: 0 }}
+            variants={actinDivVariants}
           >
             <p className={styles.DiscountText}>Get discounts!</p>
             <DiscountButton />
             <Link to="/base">
               <motion.button
                 className={styles.PizzaButton}
-                transition={{ type: "spring", stiffness: 200 }}
-                whileHover={{
-                  scale: 1.05,
-                  boxShadow:
-                    "11px 20px 56px 0px rgba(0,0,0,0.1),0px 6px 14px -6px rgba(251, 148, 46, 0.5)",
-                }}
+                variants={buttonVariants}
+                whileHover={"hover"}
               >
                 Choose you pizzas
               </motion.button>

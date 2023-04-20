@@ -1,11 +1,11 @@
 import styles from "./Base.module.css";
 
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import PrimaryButton from "../../components/buttons/PrimaryButton/PrimaryButton";
 import Card from "../../components/cards/Card/Card";
 import Illustration from "../../assets/images/pizza-illustration.webp";
 
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Base = ({ addBase, pizza }) => {
   const bases = ["Classic", "Thin & Crispy", "Thick Crust", "Thicccc"];

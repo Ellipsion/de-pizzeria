@@ -7,10 +7,15 @@ import Home from "./pages/Home/Home";
 import Base from "./pages/Base/Base";
 import Toppings from "./pages/Toppings/Toppings";
 import Order from "./pages/Order/Order";
+
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+
+import Modal from "./components/Modal/Modal";
+import OrderModal from "./components/modals/OrderModal/OrderModal";
 
 function App() {
   const [pizza, setPizza] = useState({ base: "", toppings: [] });
+  const [showModal, setShowModal] = useState(false);
 
   const addBase = (base) => {
     setPizza({ ...pizza, base });
@@ -46,13 +51,15 @@ function App() {
         },
         {
           path: "/order",
-          element: <Order pizza={pizza} />,
+          element: <Order pizza={pizza} setShowModal={setShowModal} />,
         },
       ],
     },
   ]);
   return (
     <>
+      <OrderModal showModal={showModal} setShowModal={setShowModal} />
+      {/* <Modal showModal={showModal} setShowModal={setShowModal} /> */}
       <RouterProvider router={router} />
     </>
   );

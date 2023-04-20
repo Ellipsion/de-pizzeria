@@ -69,9 +69,28 @@
     justify-content: flex-start;
 }
 
-.pizzaImage {
+.pizzaDiv {
+    /* background-color: azure; */
+    position: relative;
     width: 70px;
+    height: 70px;
 }
+
+.pizzaImage {
+    position: absolute;
+    width: 70px;
+    top: 0;
+    left: 0;
+}
+
+.pizzaSlice {
+    position: absolute;
+    top: 3px;
+    right: 3px;
+    width: 32px;
+    /* transform: rotate(-140deg); */
+}
+
 
 .orderItem {
     font-size: medium;

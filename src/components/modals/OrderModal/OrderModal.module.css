@@ -1,0 +1,22 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgba(255, 70, 70, 1); */
+    background-color: rgba(254, 254, 254, 0.555);
+    backdrop-filter: blur(12px);
+    z-index: 10;
+    cursor: pointer;
+}
+
+
+
+.image {
+    position: absolute;
+    top: 30%;
+    width: 25rem;
+    /* background-color: black; */
+    /* transform: rotateY(180deg) !important; */
+}
