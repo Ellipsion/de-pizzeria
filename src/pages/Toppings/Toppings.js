@@ -21,7 +21,7 @@ const Toppings = ({ addTopping, pizza }) => {
     animate: {
       y: -10,
       transition: {
-        delay: 1,
+        delay: 1.5,
         ease: easeOut,
         duration: 0.1,
         type: "spring",
