@@ -1,5 +1,5 @@
 import styles from "./Header.module.css";
-import logo from "../../assets/images/logo/logo.png";
+import logo from "../../assets/images/logo/logo-no-bg.png";
 // import logo2 from "../../assets/images/logo/logo3.png";
 import { Link } from "react-router-dom";
 import DiscountButton from "../buttons/DiscountButton/DiscountButton";

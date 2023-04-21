@@ -33,7 +33,7 @@
 
 .DiscountButton {
     width: 40px;
-    height: 40px;
+    height: 40px;  
     border: none;
     background-color: white;
     border-radius: 50%;
@@ -75,33 +75,40 @@
 
 /* media query for mobile */
 @media screen and (max-width: 768px) {
+    aside {
+        order: 2;
+        width: 100% !important;
+    }
     .HomeTitleDiv {
+        /* background-color: #E51414; */
+        width: 100%;
         align-items: center;
-        
+        /* padding: 1rem; */
+    }
+
+    .PizzaImageDiv {
+        order: 1;
     }
 
     .HomeTitle {
-        font-size: 3rem;
+        font-size: 2.8rem;
     }
 
     .HomePara {
         font-size: small;
+        margin-top: 1.5rem;
+        margin-left: 1rem;
+    }
+
+    .HomeActionDiv {
+        position: fixed;
+        bottom: 0;
         margin: 2rem;
-        margin-bottom: 1rem;
+        justify-content: center;
     }
 
-    
-
-    .DiscountButton {
-        margin: 0.5rem 0;
+    .DiscountText {
+        font-size: small;
     }
 
-    .PizzaButton {
-        padding: 0.8rem 1.2rem;
-    }
-
-    .PizzaImageDiv {
-        order: -1;
-        width: 100%;
-    }
 }
