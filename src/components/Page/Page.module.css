@@ -51,14 +51,14 @@
 
     .PageContainer {
         width: 100%;
-        min-height: 80vh;
+        min-height: 70vh;
         height: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         /* flex-wrap: wrap; */
         /* background-color: black; */
-        margin: 15vh 1rem 1rem 1rem;
+        margin: 10vh 1rem 1rem 1rem;
         /* margin-top: 10vh; */
 
 
