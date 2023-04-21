@@ -17,6 +17,19 @@ const Toppings = ({ addTopping, pizza }) => {
     "tomatoes",
   ];
 
+  const animationVariants = {
+    animate: {
+      y: -10,
+      transition: {
+        delay: 1,
+        ease: easeOut,
+        duration: 0.1,
+        type: "spring",
+        damping: 2,
+      },
+    },
+  };
+
   return (
     <>
       <motion.div
@@ -25,9 +38,10 @@ const Toppings = ({ addTopping, pizza }) => {
         transition={{ delay: 0.3 }}
         className={styles.BaseDiv}
       >
+        {/* {window.innerWidth < 768 && <h1>MOBILE</h1>} */}
         <motion.div
-          animate={{ y: -150 }}
-          transition={{ delay: 2, ease: easeOut, duration: 1 }}
+          variants={window.innerWidth < 768 ? animationVariants : {}}
+          animate="animate"
           className={styles.BaseWrapper}
         >
           <div className={styles.TopDiv}>
