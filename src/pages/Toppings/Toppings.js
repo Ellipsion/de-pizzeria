@@ -5,7 +5,7 @@ import PrimaryButton from "../../components/buttons/PrimaryButton/PrimaryButton"
 import Card from "../../components/cards/Card/Card";
 import Illustration from "../../assets/images/toppings-illustrations.webp";
 
-import { AnimatePresence, easeInOut, motion } from "framer-motion";
+import { AnimatePresence, easeInOut, easeOut, motion } from "framer-motion";
 
 const Toppings = ({ addTopping, pizza }) => {
   let toppings = [
@@ -25,7 +25,11 @@ const Toppings = ({ addTopping, pizza }) => {
         transition={{ delay: 0.3 }}
         className={styles.BaseDiv}
       >
-        <div className={styles.BaseWrapper}>
+        <motion.div
+          animate={{ y: -150 }}
+          transition={{ delay: 2, ease: easeOut, duration: 1 }}
+          className={styles.BaseWrapper}
+        >
           <div className={styles.TopDiv}>
             <p>Step 2</p>
             <h1>Choose your Toppings:</h1>
@@ -65,7 +69,7 @@ const Toppings = ({ addTopping, pizza }) => {
               )}
             </AnimatePresence>
           </div>
-        </div>
+        </motion.div>
       </motion.div>
     </>
   );
