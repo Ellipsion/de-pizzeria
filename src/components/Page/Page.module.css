@@ -54,12 +54,12 @@
         min-height: 80vh;
         height: auto;
         flex-direction: column;
-        justify-content: space-evenly;
+        justify-content: space-around;
         align-items: center;
         /* flex-wrap: wrap; */
         /* background-color: black; */
         margin: 1rem;
-        margin-top: 4.5rem;
+        margin-top: 10vh;
 
 
     }
