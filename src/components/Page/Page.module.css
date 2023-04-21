@@ -52,7 +52,7 @@
     .PageContainer {
         width: 100%;
         min-height: 70vh;
-        height: 70vh;
+        height: auto;
         flex-direction: column;
         justify-content: center;
         align-items: center;
