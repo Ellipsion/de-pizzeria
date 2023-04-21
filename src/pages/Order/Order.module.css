@@ -107,27 +107,33 @@
 }
 
 @media screen and (max-width: 768px) {
-
     .TopDiv {
-        height: 100%;
-        width: 100%;
-        margin-top: 4rem;
+        order: 1;
+        width: 80%;
         display: flex;
+        flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-
-    .Illustration {
-        width: 100%;
-        height: 100%;
-        border-radius: 20px;
+    .TopDiv h1 {
+        font-size: 1.5rem;
+        margin: 0;
     }
-   
+    .TopDiv p {
+        font-size: 1rem;
+        margin: 0 0 1rem 0;
+
+    }
+    .Illustration {
+        width: 80%;
+        margin: 0;
+        
+    }
     .reciept {
         height: max-content;
-        margin-top: 5rem;
+        /* margin-top: 5rem; */
         margin-bottom: 100px;
-            
+        order: 2;
     }
 }  
