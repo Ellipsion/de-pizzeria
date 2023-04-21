@@ -87,6 +87,7 @@
     }
 
     .PizzaImageDiv {
+        width: 100%;
         order: 1;
     }
 
@@ -101,8 +102,8 @@
     }
 
     .HomeActionDiv {
-        position: fixed;
-        bottom: 0;
+        /* position: fixed; */
+        /* bottom: 0; */
         margin: 2rem;
         justify-content: center;
     }
