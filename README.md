@@ -7,3 +7,4 @@ This project was created with ``ReactJs`` and ``framer-motion``
 ``framer-motion`` is an animation library for ``ReactJs``
 
 
+![Screenshot](https://github.com/Ellipsion/de-pizzeria/blob/main/public/Screenshot.png?raw=true)
