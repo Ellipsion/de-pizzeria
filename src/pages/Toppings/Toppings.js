@@ -12,7 +12,7 @@ const Toppings = ({ addTopping, pizza }) => {
     "mushrooms",
     "peppers",
     "onions",
-    "olive titties",
+    // "olive titties",
     "extra cheese",
     "tomatoes",
   ];

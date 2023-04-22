@@ -8,7 +8,7 @@ import Illustration from "../../assets/images/pizza-illustration.webp";
 import { motion, AnimatePresence } from "framer-motion";
 
 const Base = ({ addBase, pizza }) => {
-  const bases = ["Classic", "Thin & Crispy", "Thick Crust", "Thicccc"];
+  const bases = ["Classic", "Thin & Crispy", "Thick Crust", "Cheese Burst"];
 
   return (
     <>
