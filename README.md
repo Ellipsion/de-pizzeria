@@ -31,7 +31,7 @@ This project utilizes the following open-source libraries and technologies:
 
 ## Demo
 
-You can check out a live demo of De Pizzeria [here](https://de-pizzeria.vercel.app/) (if applicable).
+You can check out a live demo of De Pizzeria [here](https://de-pizzeria.vercel.app/)
 
 ## Disclaimer
 
