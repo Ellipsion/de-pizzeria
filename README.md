@@ -3,8 +3,7 @@
 De Pizzeria is a React.js web application that showcases various animations using the Framer Motion library. It simulates a pizza delivery app where users can explore different pizza options and place orders.
 
 ## Screenshots
-
-![Screenshot](https://github.com/Ellipsion/de-pizzeria/blob/main/public/Screenshot.png)
+![Screenshot](https://github.com/Ellipsion/de-pizzeria/assets/83207997/75cd8b00-8c3b-4172-8e4b-2fff169aeb8e)
 
 ## Features
 
@@ -32,7 +31,7 @@ This project utilizes the following open-source libraries and technologies:
 
 ## Demo
 
-You can check out a live demo of De Pizzeria [here](link-to-live-demo) (if applicable).
+You can check out a live demo of De Pizzeria [here](https://de-pizzeria.vercel.app/) (if applicable).
 
 ## Disclaimer
 
